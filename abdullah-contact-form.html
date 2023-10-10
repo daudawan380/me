@@ -1,0 +1,180 @@
+<section id="contact" class="section bg-light">
+  <div class="container px-lg-5">
+    <!-- Heading -->
+    <div class="position-relative d-flex text-center mb-5">
+      <h2 class="text-24 text-light opacity-4 text-uppercase fw-600 w-100 mb-0">
+        Contact
+      </h2>
+      <p class="text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0">
+        Get in Touch<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span>
+      </p>
+    </div>
+
+    <!-- Heading end-->
+
+    <div class="row gy-5">
+      <div class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
+        <h2 class="mb-3 text-5 text-uppercase">Address</h2>
+        <p class="text-3 mb-4">Lahore Pakistan</p>
+        <p class="text-3 mb-1">
+          <span class="text-primary text-4 me-2"><i class="fas fa-phone"></i></span>+92 300 4363509
+        </p>
+        <p class="text-3 mb-4" style="font-size: 14px !important">
+          <span class="text-primary text-4 me-2"><i class="fas fa-envelope"></i></span>mabd4315@gmail.com
+        </p>
+
+        <h2 class="mb-3 text-5 text-uppercase">Follow Me</h2>
+
+        <ul class="social-icons justify-content-center justify-content-md-start">
+          <li class="social-icons-whatsapp">
+            <a data-bs-toggle="tooltip" href="https://wa.me/+923004363509" target="_blank" title="Whatsapp"><i
+                class="fa-brands fa-whatsapp"></i></a>
+          </li>
+
+          <li class="social-icons-telegram">
+            <a data-bs-toggle="tooltip" href="https://t.me/itx_abdi" target="_blank" title="Telegram"><i
+                class="fa-brands fa-telegram"></i></a>
+          </li>
+
+          <!-- <li class="social-icons-fiverr fiver"><a data-bs-toggle="tooltip" href="https://twitter.com/" target="_blank" title="Fiverr"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="20px" height="20px"><circle cx="24" cy="24" r="20" fill="#66bb6a"/><path fill="#fff" d="M35.066,22.035v-0.959h-1.821l-0.8-0.014c-0.684,0-1.151,0.45-1.335,0.974v-0.959h-2.039V27.3 h2.039v-1.334v-2.066c0-0.62,0.503-1.123,1.123-1.123h0.795v4.523h2.039v-1.334v-2.066c0-0.62,0.503-1.123,1.123-1.123h1.012v-1.7 l-0.8-0.014C35.718,21.061,35.25,21.512,35.066,22.035z M20.56,21.206l-1.094,3.597l-1.093-3.597h-2.039l2.215,6.223h0.12h1.597 h0.12l2.213-6.223H20.56z M12.23,21.206v-0.415c0-0.364,0.294-0.658,0.658-0.658h1.287v-1.706h-1.767 c-1.223,0-2.216,0.991-2.216,2.216v0.564H9v1.649h1.192v4.572h2.039v-4.572h1.944v4.572h2.039v-4.572v-1.649h-2.039H12.23V21.206z M25.424,21.122h-0.248c-1.67,0-3.024,1.354-3.024,3.024v0.342c0,1.67,1.354,3.024,3.024,3.024h0.552 c1.143,0,2.122-0.706,2.524-1.705l-1.798-0.525c0,0-0.215,0.616-0.965,0.616c-0.847,0-1.295-0.463-1.354-0.989l0,0v-0.003 c-0.004-0.038-0.006-0.077-0.006-0.115h2.3h2.022v-0.643C28.448,22.476,27.094,21.122,25.424,21.122z M24.13,23.59 c0.025-0.559,0.485-1.006,1.051-1.006h0.194c0.565,0,1.026,0.446,1.051,1.006H24.13z"/><circle cx="38.852" cy="26.305" r="1.268" fill="#263238"/></svg></a></li> -->
+
+          <!-- <li class="social-icons-upwork"><a data-bs-toggle="tooltip" title="Upwork" href="https://www.upwork.com/freelancers/~01ec98ab1046ec8815?viewMode=1" target="_blank"><img src="images/upwork-icon.png" alt=""></a></li> -->
+
+          <li class="social-icons-linkedin">
+            <a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/imabdi" target="_blank" title="LinkedIn"><i
+                class="fa-brands fa-linkedin"></i></a>
+          </li>
+
+          <!-- <li class="social-icons-github"><a data-bs-toggle="tooltip" href="https://github.com/mianx" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li> -->
+        </ul>
+      </div>
+
+      <div class="col-md-8 col-xl-9 order-0 order-md-1">
+        <h2 class="mb-3 text-5 text-uppercase text-center text-md-start">
+          Send me a note
+        </h2>
+
+        <form id="contact-form" action="https://flask-backend-portfolio-abdi-e0d314dab24d.herokuapp.com/" method="post">
+          <!-- <input type="hidden" id="csrf-token"> -->
+
+          <div class="row g-4">
+            <div class="col-xl-6">
+              <input name="name" id="fName" type="text" class="form-control" required placeholder="Name" />
+            </div>
+
+            <div class="col-xl-6">
+              <input name="email" id="fMail" type="email" class="form-control" required placeholder="Email" />
+            </div>
+
+            <div class="col">
+              <textarea name="form-message" id="fMsg" class="form-control" rows="5" required
+                placeholder="Tell us more about your needs........"></textarea>
+            </div>
+          </div>
+
+          <div id="thank-you-message" class="alert alert-success alert-dismissible fade show text-start"
+            style="display: none">
+            <i class="fa fa-check-circle"></i> Thank you for contacting us and
+            will be in touch with you very soon.
+
+            <button type="button" class="btn-close text-1 mt-1" data-bs-dismiss="alert"></button>
+          </div>
+
+          <p class="text-center mt-4 mb-0">
+            <button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex" type="submit">
+              Send Message
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+     function sendMail() {
+
+// Get the form data
+const name = document.getElementById('fName').value;
+const email = document.getElementById('fMail').value;
+const message = document.getElementById('fMsg').value;
+
+// Create a JSON object with the form data
+const data = {
+    name: name,
+    email: email,
+    'form-message': message
+};
+
+// Get the button element and "Thank you" message element
+
+const submitButton = document.getElementById('submit-btn');
+const thankYouMessage = document.getElementById('thank-you-message');
+
+// Disable the button and show the spinner
+
+submitButton.setAttribute('disabled', 'disabled');
+const originalText = submitButton.innerHTML;
+submitButton.innerHTML = '<span role="status" aria-hidden="true" class="spinner-border spinner-border-sm align-self-center me-2"></span>Sending...';
+
+// Send a POST request to the Flask route
+
+fetch('https://flask-backend-portfolio-abdi-e0d314dab24d.herokuapp.com/contact-daud', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+
+    body: JSON.stringify(data)
+})
+
+.then(response => {
+    if (response.ok) {
+        // Handle a successful response here
+        console.log('Email sent successfully');
+
+        // Show the "Thank you" message
+        thankYouMessage.style.display = 'block';
+
+        // Hide the message after 2 seconds
+        setTimeout(() => {
+
+            // Fade out and remove the "Thank you" message after 3 seconds
+            $(thankYouMessage).fadeOut('slow', function() {
+                thankYouMessage.style.display = 'none';
+                // $(this).remove();
+            });
+        }, 3000);
+    } else {
+        // Handle an error response here
+        console.error('Error sending email');
+    }
+})
+
+.catch(error => {
+    // Handle any network or fetch API errors here
+    console.error('Fetch error:', error);
+})
+
+.finally(() => {
+    // Re-enable the button and restore the original text
+
+    submitButton.removeAttribute('disabled');
+    submitButton.innerHTML = originalText;
+
+    // Clear the form data
+    document.getElementById('fName').value = '';
+    document.getElementById('fMail').value = '';
+    document.getElementById('fMsg').value = '';
+
+});
+}
+
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+
+e.preventDefault();
+sendMail(); // Call the sendMail function
+
+});
+
+</script>
