@@ -8,6 +8,7 @@ html {
   min-height: 100%;
   width: 100%;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 body {
   position: initial;
@@ -25,6 +26,7 @@ body {
   background-attachment: fixed;
   overflow-y: auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .lm-animated-bg {
   position: absolute;
