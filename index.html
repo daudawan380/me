@@ -22,7 +22,8 @@
   </head>
 
   <body class="page">
-
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
     <div class="lm-animated-bg"></div>
     
     <!-- Loading animation -->
@@ -1262,7 +1263,29 @@
         
       </div>
     </div>
+    <script>
+      const cursor = document.querySelector("#cursor");
+      const cursorBorder = document.querySelector("#cursor-border");
+      const cursorPos = { x: 0, y: 0 };
+      const cursorBorderPos = { x: 0, y: 0 };
 
+      document.addEventListener("mousemove", (e) => {
+        cursorPos.x = e.clientX;
+        cursorPos.y = e.clientY;
+
+        cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+      });
+
+      requestAnimationFrame(function loop() {
+        const easting = 8;
+        cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easting;
+        cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easting;
+
+        cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`;
+        requestAnimationFrame(loop);
+      });
+
+    </script>
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src='../../../../www.google.com/recaptcha/api.js'></script>
