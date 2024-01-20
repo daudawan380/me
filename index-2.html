@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/modernizr.custom.js"></script>
   </head>
 
@@ -174,6 +176,33 @@
                 </div>
 
                 <div class="row">
+                  <div class="container m-4">
+                    <h1 class="text mt-3 mb-3">Navigating the digital frontier with the grace of a frontend sorcerer, I'm your Angular Alchemist based in the tech-savvy landscape of Pakistan. <span>Just an Ordinary Angular Developer</span></h1>
+                    <h1 class="text mt-3 mb-3"> Picture this: I don't just write code; I compose symphonies that make pixels dance. If frontend development were a canvas, I'd be the artist armed with Angular brushes, creating masterpieces that not only look good but have a certain wit about them <span>ohhh waitttt!, this is just a random gpt script!<br><a href="#portfolio">wanna see my work?</a> </span></h1>
+                    <h1 class="text mt-3 mb-3">I specialize in making your user interface as smooth as a perfectly brewed cup of chai<span>Love to have a cup of chai with you! </span></h1>
+                    <h1 class="text mt-3 mb-3">So, if you're ready to inject a dose of charm into your digital presence, let's embark on this coding adventure together!<span><a href="#contact" >Let's Connect</a></span></h1>
+                  <!--   <h1 class="text">LIKE THIS?<span><a href="https://daudsuleman.me/" target="_blank">LET'S CONNECT</a></span></h1> -->
+                  </div>
+                </div>
+                <script>
+                  gsap.registerPlugin(ScrollTrigger);
+
+                  const textElements = gsap.utils.toArray('.text');
+
+                  textElements.forEach(text => {
+                    gsap.to(text, {
+                      backgroundSize: '100%',
+                      ease: 'none',
+                      scrollTrigger: {
+                        trigger: text,
+                        start: 'center 80%',
+                        end: 'center 20%',
+                        scrub: true,
+                      },
+                    });
+                  });
+                </script>
+                <!-- <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <div class="info-list-w-icon">
                       <div class="info-block-w-icon">
@@ -226,7 +255,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- /Services -->
 
                 <div class="row">
