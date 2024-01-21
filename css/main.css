@@ -1744,6 +1744,8 @@ ul.social-links li:last-child a {
 }
 .certi-logo img {
   display: block;
+  height: 70px;
+  background-size: contain;
   max-width: 100%;
 }
 .certi-content {
@@ -4549,6 +4551,9 @@ a.post-thumbnail:hover {
   .post-content .single-image {
     margin: 30px 0;
   }
+  .text{
+    font-size: 5vw;
+  }
 }
 @media only screen and (max-width: 768px) {
   .portfolio-grid figure {
@@ -4654,6 +4659,9 @@ a.post-thumbnail:hover {
     display: block;
     text-align: center;
     margin: 12px 0;
+  }
+  .text{
+    font-size: 5vw;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -4836,6 +4844,9 @@ a.post-thumbnail:hover {
 .home-content.third-style .start-page-content .page-content .download-resume {
   margin-top: 15px;
 }
+.text{
+  font-size: 5vw;
+}
 @media screen and (min-width: 768px) {
   .home-content.third-style .inner-text-block .hp-text-block {
     -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.11);
@@ -4853,6 +4864,9 @@ a.post-thumbnail:hover {
     padding: 50px 0 50px 70px;
     margin-right: -70px;
     z-index: 1;
+  }
+  .text{
+    font-size: 5vw;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -4887,6 +4901,9 @@ a.post-thumbnail:hover {
     right: 0;
     left: 0;
     bottom: 0;
+  }
+  .text{
+    font-size: 5vw;
   }
 }
 
